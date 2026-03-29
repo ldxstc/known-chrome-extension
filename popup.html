@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Known</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="known-popup">
+    <main class="known-popup__card">
+      <header class="known-popup__header">
+        <img src="icons/icon-48.png" alt="Known logo" class="known-popup__logo" />
+        <div>
+          <p class="known-popup__eyebrow">Known</p>
+          <h1 class="known-popup__title">AI Memory</h1>
+        </div>
+      </header>
+
+      <section class="known-popup__stats">
+        <article class="known-popup__stat">
+          <span class="known-popup__label">Nodes</span>
+          <strong id="nodesValue" class="known-popup__value">-</strong>
+        </article>
+        <article class="known-popup__stat">
+          <span class="known-popup__label">Insights</span>
+          <strong id="insightsValue" class="known-popup__value">-</strong>
+        </article>
+        <article class="known-popup__stat known-popup__stat--wide">
+          <span class="known-popup__label">Plan</span>
+          <strong id="planValue" class="known-popup__value">-</strong>
+        </article>
+      </section>
+
+      <p id="statusText" class="known-popup__status">Loading memory stats...</p>
+
+      <footer class="known-popup__footer">
+        <a
+          class="known-popup__link"
+          href="https://finallyknown.ai"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Powered by finallyknown.ai
+        </a>
+        <button id="settingsButton" class="known-popup__button" type="button">
+          Settings
+        </button>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
